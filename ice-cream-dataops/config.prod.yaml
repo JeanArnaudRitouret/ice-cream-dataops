@@ -1,6 +1,6 @@
 environment:
   name: prod
-  project: ${CDF_PROJECT_PROD}
+  project: cdf-bootcamp-74-prod
   validation-type: prod
   selected:
   - modules/
@@ -18,20 +18,20 @@ variables:
       ice_cream_api:
         icapi_extractors_source_id: fb4db69f-5ead-419f-960b-7541b4677347 # group prod: bootcamp-74-prod-icapi-extractors
         tokenUri: ${IDP_TOKEN_URL}
-        cdfProjectName: ${CDF_PROJECT_PROD}
+        cdfProjectName: ${CDF_PROJECT}
         scopes: ${IDP_SCOPES}
-        icapi_trigger_client_id: ${IDP_CLIENT_ID_PROD}
-        icapi_trigger_client_secret: ${IDP_CLIENT_SECRET_PROD}
-        icapi_extractors_client_id: ${ICAPI_EXTRACTORS_CLIENT_ID_PROD}
-        icapi_extractors_client_secret: ${ICAPI_EXTRACTORS_CLIENT_SECRET_PROD}
+        icapi_trigger_client_id: ${IDP_CLIENT_ID}
+        icapi_trigger_client_secret: ${IDP_CLIENT_SECRET}
+        icapi_extractors_client_id: ${ICAPI_EXTRACTORS_CLIENT_ID}
+        icapi_extractors_client_secret: ${ICAPI_EXTRACTORS_CLIENT_SECRET}
 
       use_cases:
         oee:
           data_pipeline_oee_source_id: cc452d19-0a58-4dc5-9bf9-2e5bc6f7b4d1 # group prod: bootcamp-74-prod-data-pipeline-oee
           uc_oee_ds_external_id: ds_uc_oee
           oee_space_name: oee_ts_space
-          data_pipeline_oee_client_id: ${DATA_PIPELINE_OEE_CLIENT_ID_PROD}
-          data_pipeline_oee_client_secret: ${DATA_PIPELINE_OEE_CLIENT_SECRET_PROD}
+          data_pipeline_oee_client_id: ${DATA_PIPELINE_OEE_CLIENT_ID}
+          data_pipeline_oee_client_secret: ${DATA_PIPELINE_OEE_CLIENT_SECRET}
 
   selected:
     - modules/bootcamp/data_foundation
